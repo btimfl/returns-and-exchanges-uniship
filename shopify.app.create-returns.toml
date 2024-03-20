@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1e31ff1936d9cd481c21d26c1a337b84"
+name = "rms-vipbags"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+dev_store_url = "quickstart-ecd8b843.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[app_proxy]
+url = "https://api-unilog.unicommerce.com/"
+subpath = "uniship-proxy"
+prefix = "apps"
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
